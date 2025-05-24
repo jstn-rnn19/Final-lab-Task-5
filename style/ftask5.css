@@ -1,0 +1,77 @@
+body {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: poppins;
+  background-color: #0b1215;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a, ol > a {
+  font-family: poppins;
+  color: rgb(244, 244, 244);
+  text-decoration: none;
+}
+
+main, .footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title, .taskTitle {
+  display: flex;
+  position: relative;
+  max-width: max-content;
+  font-family: poppins;
+  color: rgb(244, 244, 244);
+  align-items: center;
+  justify-content: flex-start;
+  font-size: clamp(.8rem, 2vw, 2rem);
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  text-align: left;
+  font-family: poppins;
+  font-size: clamp(.5rem, 2vw, 2rem);
+  color: rgb(244, 244, 244);
+  word-break: break-all;
+  margin-top: 8px;
+  
+}
+
+img {
+  border-radius: 8px;
+}
+
+.descrip{
+  display: flex;
+  font-family: poppins;
+  color: rgb(244, 244, 244);
+  align-items: center;
+  justify-content: center;
+  color: rgb(244, 244, 244);
+  margin-top: 0px;
+  font-weight: 600;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.card .Title {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}

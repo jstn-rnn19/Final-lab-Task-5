@@ -1,0 +1,127 @@
+.navOption {
+  display: flex;
+  padding: 20px;
+  padding-right: 60px;
+  justify-content: space-between;
+  gap: 30px;
+  position: fixed;
+  z-index: 1000;
+  width: 98%;
+  top: 0;
+  left: 0;
+  background-color: #0b1215;
+  font-family: poppins;
+}
+
+.navOption a {
+
+  word-break: break-all;
+  font-size: clamp(.4rem, 2vw, 2rem);
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.githubRepo, .EDM {
+  color: rgb(244, 244, 244);
+  position: relative;
+  word-break: break-word;
+  max-width: max-content;
+}
+.githubRepo:hover, .EDM:hover {
+  color: #ffa600;
+  transition: .5s;
+}
+.githubRepo::before, .EDM::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-image: linear-gradient(to right, #ff8531, #ff8933, #ff8c35, #ff9037, #ff9339, #ff993d, #ff9f41, #ffa546, #ffae4e, #ffb757, #ffc061, #ffc86b);
+  transition: all .5s;
+}
+.githubRepo:hover::before, .EDM:hover::before{
+  width: 100%;
+  transition: all .5s;
+}
+
+
+.container-card, .footer{
+  background: #5e5e5e;
+  margin: max-content;
+  padding: 20px;
+  padding-left: 35px;
+  margin-top: 30px;
+  border: 2px solid #747474;
+  background: linear-gradient(135deg, rgba(94, 94, 94, 0.1),  rgb(94, 94, 94, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ababab;
+}
+
+li {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+li > ul:hover, li > ul > li:hover, ol > li:hover, li:hover a{
+  color: inherit;
+  color: #ffa600;
+  transform: translateX(10px);
+  transition: .5s;
+}
+li::marker{
+  color: #dedfe0;
+  font-size: clamp(.6rem, 1.5vw, 1.4rem);
+}
+.card > .Title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+
+.container a {
+  color: rgb(244, 244, 244);
+  position: relative;
+  word-break: break-word;
+  max-width: max-content;
+}
+
+.container a:hover, .footer a:hover {
+  color: #ffa600;
+  transition: .5s;
+}
+
+
+
+
+.Title, .taskTitle {
+  display: flex;
+  position: relative;
+  max-width: max-content;
+}
+
+.Title:hover, .taskTitle:hover, .tableStruc:hover {
+  color: #ffa600;
+  transition: .5s;
+}
+.Title::before, .taskTitle::before, .tableStruc::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-image: linear-gradient(to right, #ff8531, #ff8933, #ff8c35, #ff9037, #ff9339, #ff993d, #ff9f41, #ffa546, #ffae4e, #ffb757, #ffc061, #ffc86b);
+  transition: all .5s;
+}
+
+.Title:hover::before, h4:hover::before, .taskTitle:hover::before, .tableStruc:hover::before {
+  width: 100%;
+}
